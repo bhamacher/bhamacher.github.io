@@ -1,0 +1,34 @@
+<html>
+
+<head>
+    <style>
+        ul {
+            margin-left: 0px;
+            margin-right: 0;
+            padding-left: 15px;
+        }
+
+        li {
+            margin-left: 0px;
+            margin-right: 0;
+        }
+    </style>
+</head>
+
+{% assign navurl = page.url | remove: 'index.html' %}
+<ul>
+    {% for item in include.nav %}
+    <li>
+        <a href="{{ item.url }}">
+            {% if item.url == navurl %}
+            <b>{{ item.text }}</b>
+            {% else %}
+            {{ item.text }}
+            {% endif %}
+        </a>
+    </li>
+    {% if item.subitems and navurl contains item.url %}
+    {% include nav.html nav=item.subitems %}
+    {% endif %}
+    {% endfor %}
+</ul>

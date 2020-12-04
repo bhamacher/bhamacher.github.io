@@ -1,0 +1,36 @@
+- text: Home
+  url: /index.html
+- text: Zera
+  url: /Zera/
+  subitems:
+    - text: ZeraVeinPlatform
+      url: /Zera/ZeraVeinPlatform/
+      subitems:
+        - text: Vein Framework
+          url: /Zera/ZeraVeinPlatform/VeinFramework/
+        - text: Module Manager
+          url: /Zera/ZeraVeinPlatform/Documents/Modulemanager.html
+        - text: Measurement Modules
+          url: /Zera/ZeraVeinPlatform/MeasurementModules/
+        - text: Future Aspects
+          url: /Zera/ZeraVeinPlatform/FutureAspects/
+          subitems:
+            - text: Seperate Modulemanager and Broker
+              url: /Zera/ZeraVeinPlatform/FutureAspects/Documents/SepVeinMod.html
+            - text: New Vein Design
+              url: /Zera/ZeraVeinPlatform/FutureAspects/Documents/NewVeinDesign.html
+        - text: Logger Database
+          url: /Zera/ZeraVeinPlatform/VeinFramework/Documents/Database.html
+        - text: Repositories
+          url: /Zera/ZeraVeinPlatform/Documents/repos.html
+    - text: MT310
+      url: /Zera/Devices/MT310s2/
+    - text: COM5003
+      url: /Zera/Devices/COM5003/
+    - text: Code Style Guide
+      url: /Zera/CodeStyle/
+    - text: Workflows
+      url: /Zera/Workflows/
+# - text: Zerycon
+#   url: /Zerycon/
+

@@ -1,7 +1,12 @@
 # mt310s2-meas-session
 
-# `_System`
-The System entity manages all vein relevant data
+## Database
+
+The database description to this session is [here](../../Documents/meas-session-db.md).
+
+## Entity component map
+
+### `_System`
  - `Session` *(string)*: The current session.
  - `LoggedComponents` *(object)*: Entities and components to log into the database with the next transaction.
  - `EntityName` *(string)*: The Entities name "_System".
@@ -11,12 +16,12 @@ The System entity manages all vein relevant data
  - `ModulesPaused` *(boolean)*: .
  - `Entities` *(object)*: .
  
-# `_ScriptSystem`
+### `_ScriptSystem`
  - `addScript()` *(undefined)*: .
  - `EntityName` *(string)*: .
  - `Scripts` *(object)*: .
 
-# `CustomerData`
+### `CustomerData`
  - `PAR_LocationCountry` *(string)*: .
  - `PAR_LocationCity` *(string)*: .
  - `PAR_LocationStreet` *(string)*: .
@@ -49,7 +54,7 @@ The System entity manages all vein relevant data
  - `customerDataAdd(QString fileName)` *(RPC)*: .
  - `customerDataRemove(QString fileName)` *(RPC)*: .
 
-# `_LoggingSystem`
+### `_LoggingSystem`
  - `ScheduledLoggingDuration` *(undefined)*: .
  - `ScheduledLoggingEnabled` *(boolean)*: .
  - `LoggingStatus` *(string)*: .
@@ -74,7 +79,7 @@ The System entity manages all vein relevant data
  - `RPC_readTransaction(QString p_session,QString p_transaction)` *(RPC)*: .
  - `RPC_deleteSession(QString p_session)` *(RPC)*: .
 
-# `Power3Module1`
+### `Power3Module1`
  - `ACT_HPP3` *(object)*: .
  - `ACT_HPS1` *(object)*: .
  - `ACT_HPS2` *(object)*: .
@@ -88,7 +93,7 @@ The System entity manages all vein relevant data
  - `ACT_HPP1` *(object)*: .
  - `ACT_HPP2` *(object)*: .
 
-# `SPM1Module1`
+### `SPM1Module1`
  - `PAR_Uplimit` *(number)*: .
  - `INF_ModuleInterface` *(object)*: .
  - `PAR_TXUNIT` *(string)*: .
@@ -108,12 +113,12 @@ The System entity manages all vein relevant data
  - `ACT_Power` *(number)*: .
  - `EntityName` *(string)*: .
 
-# `ExportModule`
+### `ExportModule`
  - `EntityName` *(string)*: .
  - `Status` *(boolean)*: .
  - `RPC_Convert(QString p_engine,QString p_inputPath,QString p_outputPath,QString p_parameters,QString p_session)` *(RPC)*: .
 
-# `OSCIModule1`
+### `OSCIModule1`
  - `PAR_RefChannel` *(string)*: .
  - `ACT_OSCI1` *(object)*: .
  - `ACT_OSCI2` *(object)*: .
@@ -127,7 +132,7 @@ The System entity manages all vein relevant data
  - `SIG_Measuring` *(number)*: .
  - `INF_ModuleInterface` *(object)*: .
 
-# `RMSModule1`
+### `RMSModule1`
  - `ACT_RMSPN2` *(number)*: .
  - `ACT_RMSPN3` *(number)*: .
  - `ACT_RMSPN4` *(number)*: .
@@ -144,7 +149,7 @@ The System entity manages all vein relevant data
  - `INF_ModuleInterface` *(object)*: .
  - `ACT_RMSPN1` *(number)*: .
 
-# `POWER1Module3`
+### `POWER1Module3`
  - `PAR_MeasuringMode` *(string)*: .
  - `ACT_PQS1` *(number)*: .
  - `ACT_PQS2` *(number)*: .
@@ -156,7 +161,7 @@ The System entity manages all vein relevant data
  - `SIG_Measuring` *(number)*: .
  - `INF_ModuleInterface` *(object)*: .
 
-# `POWER1Module4`
+### `POWER1Module4`
  - `PAR_MeasuringMode` *(string)*: .
  - `ACT_PQS1` *(number)*: .
  - `ACT_PQS2` *(number)*: .
@@ -168,7 +173,7 @@ The System entity manages all vein relevant data
  - `SIG_Measuring` *(number)*: .
  - `INF_ModuleInterface` *(object)*: .
 
-# `AdjustmentModule1`
+### `AdjustmentModule1`
  - `PAR_AdjustPCBData` *(string)*: .
  - `PAR_AdjustPhase` *(string)*: .
  - `PAR_AdjustOffsetStatus` *(number)*: .
@@ -184,7 +189,7 @@ The System entity manages all vein relevant data
  - `PAR_Storage` *(number)*: .
  - `PAR_AdjustInit` *(number)*: .
 
-# `THDNModule1`
+### `THDNModule1`
  - `ACT_THDN1` *(number)*: .
  - `ACT_THDN2` *(number)*: .
  - `ACT_THDN3` *(number)*: .
@@ -198,7 +203,7 @@ The System entity manages all vein relevant data
  - `SIG_Measuring` *(number)*: .
  - `INF_ModuleInterface` *(object)*: .
 
-# `THDNModule2`
+### `THDNModule2`
  - `ACT_THDR1` *(number)*: .
  - `PAR_Interval` *(number)*: .
  - `ACT_THDR2` *(number)*: .
@@ -212,7 +217,7 @@ The System entity manages all vein relevant data
  - `ACT_THDR8` *(number)*: .
  - `INF_ModuleInterface` *(object)*: .
 
-# `SEC1Module1`
+### `SEC1Module1`
  - `PAR_DutConstant` *(number)*: .
  - `PAR_Uplimit` *(number)*: .
  - `INF_ModuleInterface` *(object)*: .
@@ -235,7 +240,7 @@ The System entity manages all vein relevant data
  - `PAR_MRate` *(number)*: .
  - `PAR_Continuous` *(number)*: .
 
-# `DFTModule1`
+### `DFTModule1`
  - `PAR_RefChannel` *(string)*: .
  - `ACT_DFTPN1` *(object)*: .
  - `ACT_RFIELD` *(string)*: .
@@ -254,11 +259,11 @@ The System entity manages all vein relevant data
  - `INF_ModuleInterface` *(object)*: .
  - `ACT_DFTPP3` *(object)*: .
 
-# `ModeModule1`
+### `ModeModule1`
  - `EntityName` *(string)*: .
  - `INF_ModuleInterface` *(object)*: .
 
-# `LambdaModule1`
+### `LambdaModule1`
  - `ACT_Lambda2` *(number)*: .
  - `ACT_Lambda3` *(number)*: .
  - `ACT_Lambda4` *(number)*: .
@@ -267,7 +272,7 @@ The System entity manages all vein relevant data
  - `INF_ModuleInterface` *(object)*: .
  - `ACT_Lambda1` *(number)*: .
 
-# `Burden1Module1`
+### `Burden1Module1`
  - `ACT_Burden1` *(number)*: .
  - `ACT_Ratio1` *(number)*: .
  - `ACT_PFactor1` *(number)*: .
@@ -286,7 +291,7 @@ The System entity manages all vein relevant data
  - `SIG_Measuring` *(number)*: .
  - `INF_ModuleInterface` *(object)*: .
 
-# `Burden1Module2`
+### `Burden1Module2`
  - `ACT_Burden1` *(number)*: .
  - `ACT_Ratio1` *(number)*: .
  - `ACT_PFactor1` *(number)*: .
@@ -305,7 +310,7 @@ The System entity manages all vein relevant data
  - `SIG_Measuring` *(number)*: .
  - `INF_ModuleInterface` *(object)*: .
 
-# `SampleModule1`
+### `SampleModule1`
  - `SIG_PLL` *(number)*: .
  - `EntityName` *(string)*: .
  - `PAR_PllAutomaticOnOff` *(number)*: .
@@ -313,7 +318,7 @@ The System entity manages all vein relevant data
  - `INF_ModuleInterface` *(object)*: .
  - `PAR_ChannelRange` *(string)*: .
 
-# `StatusModule1`
+### `StatusModule1`
  - `INF_DSPVersion` *(string)*: .
  - `INF_PCBServerVersion` *(string)*: .
  - `PAR_SerialNr` *(string)*: .
@@ -327,7 +332,7 @@ The System entity manages all vein relevant data
  - `INF_AdjChksum` *(string)*: .
  - `INF_DeviceType` *(string)*: .
 
-# `FFTModule1`
+### `FFTModule1`
  - `PAR_RefChannel` *(string)*: .
  - `ACT_FFT1` *(object)*: .
  - `ACT_FFT2` *(object)*: .
@@ -342,7 +347,7 @@ The System entity manages all vein relevant data
  - `SIG_Measuring` *(number)*: .
  - `INF_ModuleInterface` *(object)*: .
 
-# `Transformer1Module1`
+### `Transformer1Module1`
  - `PAR_PrimClampPrim` *(number)*: .
  - `PAR_SecClampSec` *(number)*: .
  - `ACT_Angle1` *(number)*: .
@@ -359,11 +364,11 @@ The System entity manages all vein relevant data
  - `ACT_Error1` *(number)*: .
  - `PAR_PrimClampSec` *(number)*: .
 
-# `SCPIModule1`
+### `SCPIModule1`
  - `EntityName` *(string)*: .
  - `INF_ModuleInterface` *(object)*: .
 
-# `RangeModule1`
+### `RangeModule1`
  - `ACT_Frequency` *(number)*: .
  - `INF_Channel2OVLREJ` *(number)*: .
  - `SIG_Channel1OVL` *(number)*: .
@@ -423,7 +428,7 @@ The System entity manages all vein relevant data
  - `ACT_Channel1Peak` *(number)*: .
  - `SIG_Channel4OVL` *(number)*: .
 
-# `SEM1Module1`
+### `SEM1Module1`
  - `PAR_Uplimit` *(number)*: .
  - `INF_ModuleInterface` *(object)*: .
  - `PAR_TXUNIT` *(string)*: .
@@ -443,7 +448,7 @@ The System entity manages all vein relevant data
  - `ACT_Power` *(number)*: .
  - `EntityName` *(string)*: .
 
-# `_Files`
+### `_Files`
  - `AvailableCustomerData` *(object)*: .
  - `EntityName` *(string)*: .
  - `AutoMountedPaths` *(object)*: .
@@ -455,7 +460,7 @@ The System entity manages all vein relevant data
  - `RPC_CopyFile(QString p_dest,bool p_overwrite,QString p_source)` *(RPC)*: .
  - `RPC_CopyDirFiles(bool p_cleanDestFirst,QString p_destDir,QStringList p_nameFilters,bool p_overwrite,QString p_sourceDir)` *(RPC)*: .
 
-# `POWER1Module1`
+### `POWER1Module1`
  - `PAR_MeasuringMode` *(string)*: .
  - `ACT_PQS1` *(number)*: .
  - `ACT_PQS2` *(number)*: .
@@ -467,7 +472,7 @@ The System entity manages all vein relevant data
  - `SIG_Measuring` *(number)*: .
  - `INF_ModuleInterface` *(object)*: .
 
-# `POWER1Module2`
+### `POWER1Module2`
  - `PAR_MeasuringMode` *(string)*: .
  - `ACT_PQS1` *(number)*: Power phase one.
  - `ACT_PQS2` *(number)*: .
@@ -478,3 +483,5 @@ The System entity manages all vein relevant data
  - `EntityName` *(string)*: .
  - `SIG_Measuring` *(number)*: .
  - `INF_ModuleInterface` *(object)*: .
+
+
